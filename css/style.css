@@ -1,6 +1,16 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
 html,body {
     width: 100%;
-    height: 110%;
+    height: 100%;
     overflow-x: hidden;
     margin: 0px;
     background: rgb(2,0,36);
@@ -9,7 +19,7 @@ html,body {
 
 .contactInfo {
     align-content: center;
-    position: absolute;
+    position: relative;
     margin-right: 20px;
     bottom: 20px;
 }
@@ -128,26 +138,47 @@ html,body {
     text-align: justify;
 }
 
+.pizzaSelect {
+    font-size: 24px;
+}
+
 .Size {
-    position: relative;
-    margin: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.crust {
+    height: auto;
+}
+
+.crustInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.crustTitle {
+    width: 100%;
+}
+
+.crustSelection {
+    width: 100%;
+}
+
+.centerCrustSelection {
+    width: 180px;
+    margin: 0 auto;
 }
 
 .information {
     display: grid;
-    width: 50vh;
-    position: relative;
-    text-align: center;
     height: 10vh;
+    text-align: center;
 }
 
 form {
     display: inline-block;
-    position: relative;
-    bottom: 100px;
-    height: 500px;
-    margin: 1.5em;
-    padding: 1em;
+    height: auto;
 }
 
 .toppings {
@@ -156,52 +187,52 @@ form {
 }
 
 .sauce {
-    position: relative
-    bottom 0px;
-    margin: 20px;
+    margin: 5px 0;
 }
 
 .address {
     display: grid;
-    position: absolute;
     height: 6em;
-    bottom: 0;
-    left: 30.8em;
-}
-
-.crust {
-    position: absolute;
-    top: 20em;
-    bottom: 48em;
-    left: 3em;
 }
 
 select {
-    position: absolute;
-    bottom: 10em;
-    left: 40em;
+    margin-top: 5px;
     width: 149px;
 }
 
-.orderh1 {
-    position: absolute;
-    top: 2.3em;
-}
-
 .titles1 {
-    position: absolute;
-    top: 8.3em;
-    left: 2.7em;
+    text-align: center;
 }
 
 .titles2 {
-    position: absolute;
-    top: 8.3em;
-    left: 16em;
+    text-align: center;
 }
 
 .titles3 {
-    position: absolute;
-    top: 8.3em;
-    left: 27em;
+    text-align: center;
+}
+
+.pizzaSelect {
+    width: 40%;
+}
+
+.customerInfo {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.info {
+    margin: 20px auto;
+    width: 700px;
+}
+
+.infoCenter {
+    width: 100%;
+}
+
+.infoHeader {
+    text-align: center;
+    font-size: 24px;
 }

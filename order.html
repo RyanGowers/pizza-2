@@ -7,6 +7,9 @@
 		<body>
 			<h1>Order page</h1>
 			<div class="header">
+				<h1 class="orderh1">
+					Order a pizza and fill out your address information and we will have your pizza out to you.
+				</h1>
 				<u1 class="navBar">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
@@ -14,131 +17,176 @@
 					<li><a href="order.html">Order</a></li>
 				</u1>
 			</div>
-		</body>
-		<form class="Size">
-			<input type="radio" id="Small" name="pizzaSize">
-			<label for="Small">Small</label><br>
-			<input type="radio" id="Medium" name="pizzaSize">
-			<label for="Medium">Medium</label><br>
-			<input type="radio" id="Large" name="pizzaSize">
-			<label for="Large">Large</label><br>
-			<input type="radio" id="Extra-Large" name="pizzaSize">
-			<label for="Extra-Large">Extra Large</label><br>
-		</form>
-		<form  class="sauce">
-			<input type="radio" id="Marinara" name="sauce">
-			<label for="Marinara">Marinara Sauce</label><br>
-			<input type="radio" id="Alfredo" name="sauce">
-			<label for="Alfredo">Alfredo Sauce</label><br>
-			<input type="radio" id="BBQ" name="sauce">
-			<label for="BBQ">BBQ Sauce</label><br>
-			<input type="radio" id="none" name="sauce">
-			<label for="none">No sauce</label><br>
-		</form>
-		<form class="toppings">
-			<input type="checkbox" id="pepperoni">
-			<label for="pepperoni">Pepperoni</label><br>
-			<input type="checkbox" id="sausage">
-			<label for="sausage">Sausage</label><br>
-			<input type="checkbox" id="chicken">
-			<label for="chicken">Chicken</label><br>
-			<input type="checkbox" id="bacon">
-			<label for="bacon">Bacon</label><br>
-			<input type="checkbox" id="onion">
-			<label for="onion">Onion</label><br>
-			<input type="checkbox" id="mushroom">
-			<label for="mushroom">Mushroom</label><br>
-			<input type="checkbox" id="peppers">
-			<label for="peppers">Peppers</label><br>
-			<input type="checkbox" id="pineapple">
-			<label for="pineapple">Pineapple</label><br>
-		</form>
-		<form class="information">
-			<label>Enter your delivery and contact information</label>
-			<input type="text" id="firstName" placeholder="First Name">
-			<input type="text" id="lastName" placeholder="Last Name">
-			<input type="text" id="email" placeholder="Email Address">
-			<input type="text" id="phone" placeholder="(XXX) XXX-XXXX">
-			<input type="text" id="additionalInfo" placeholder="Delivery Instructions">
-			<button type="submit">Submit</button>
-		</form>
-		<select class="states">
-			<option value="AL">Alabama</option>
-			<option value="AK">Alaska</option>
-			<option value="AZ">Arizona</option>
-			<option value="AR">Arkansas</option>
-			<option value="CA">California</option>
-			<option value="CO">Colorado</option>
-			<option value="CT">Connecticut</option>
-			<option value="DE">Delaware</option>
-			<option value="DC">District Of Columbia</option>
-			<option value="FL">Florida</option>
-			<option value="GA">Georgia</option>
-			<option value="HI">Hawaii</option>
-			<option value="ID">Idaho</option>
-			<option value="IL">Illinois</option>
-			<option value="IN">Indiana</option>
-			<option value="IA">Iowa</option>
-			<option value="KS">Kansas</option>
-			<option value="KY">Kentucky</option>
-			<option value="LA">Louisiana</option>
-			<option value="ME">Maine</option>
-			<option value="MD">Maryland</option>
-			<option value="MA">Massachusetts</option>
-			<option value="MI">Michigan</option>
-			<option value="MN">Minnesota</option>
-			<option value="MS">Mississippi</option>
-			<option value="MO">Missouri</option>
-			<option value="MT">Montana</option>
-			<option value="NE">Nebraska</option>
-			<option value="NV">Nevada</option>
-			<option value="NH">New Hampshire</option>
-			<option value="NJ">New Jersey</option>
-			<option value="NM">New Mexico</option>
-			<option value="NY">New York</option>
-			<option value="NC">North Carolina</option>
-			<option value="ND">North Dakota</option>
-			<option value="OH">Ohio</option>
-			<option value="OK">Oklahoma</option>
-			<option value="OR">Oregon</option>
-			<option value="PA">Pennsylvania</option>
-			<option value="RI">Rhode Island</option>
-			<option value="SC">South Carolina</option>
-			<option value="SD">South Dakota</option>
-			<option value="TN">Tennessee</option>
-			<option value="TX">Texas</option>
-			<option value="UT">Utah</option>
-			<option value="VT">Vermont</option>
-			<option value="VA">Virginia</option>
-			<option value="WA">Washington</option>
-			<option value="WV">West Virginia</option>
-			<option value="WI">Wisconsin</option>
-			<option value="WY">Wyoming</option>
-		</select>
-		<form class="address">
-			<input type="text" placeholder="Address line 1">
-			<input type="text" placeholder="Address line 2">
-			<input type="text" placeholder="City">
-			<input type="text" placeholder="Zip Code">
-		</form>
-		<select class="crust">
-			<option value="thick">Thick</option>
-			<option value="thin">Thin</option>
-			<option value="flat">Flat Bread</option>
-			<option value="stuffed">Stuffed Crust</option>
-		</select>
-		<h1 class="orderh1">
-			Order a pizza and fill out your address information and we will have your pizza out to you.
-		</h1>
-		<p class="titles1">
-			<strong>Size & Crust</strong>
-		</p>
-		<p class="titles2">
-			<strong>Sauce</strong>
-		</p>
-		<p class="titles3">
-			<strong>Toppings</strong>
-		</p>
+	<div id="wrapper">
+		<div class="pizzaSelect">
+			<div class="crustInfo">
+				<div class="crustTitle">
+					<p class="titles1">
+					<strong>Size & Crust</strong>
+					</p>
+				</div>
+
+				<div class="crustSelection">
+					<div class="centerCrustSelection">
+						<form class="Size">
+							<input type="radio" id="Small" name="pizzaSize">
+							<label for="Small">Small</label><br>
+							<input type="radio" id="Medium" name="pizzaSize">
+							<label for="Medium">Medium</label><br>
+							<input type="radio" id="Large" name="pizzaSize">
+							<label for="Large">Large</label><br>
+							<input type="radio" id="Extra-Large" name="pizzaSize">
+							<label for="Extra-Large">Extra Large</label><br>
+						
+							<select class="crust">
+								<option value="thick">Thick</option>
+								<option value="thin">Thin</option>
+								<option value="flat">Flat Bread</option>
+								<option value="stuffed">Stuffed Crust</option>
+							</select>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="crustInfo">
+				<div class="crustTitle">
+					<p class="titles2">
+						<strong>Sauce</strong>
+					</p>
+				</div>
+
+				<div class="crustSelection">
+					<div class="centerCrustSelection">
+						<form class="sauce">
+							<input type="radio" id="Marinara" name="sauce">
+							<label for="Marinara">Marinara Sauce</label><br>
+							<input type="radio" id="Alfredo" name="sauce">
+							<label for="Alfredo">Alfredo Sauce</label><br>
+							<input type="radio" id="BBQ" name="sauce">
+							<label for="BBQ">BBQ Sauce</label><br>
+							<input type="radio" id="none" name="sauce">
+							<label for="none">No sauce</label><br>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="crustInfo">
+				<div class="centerCrustSelection">
+					<p class="titles3">
+						<strong>Toppings</strong>
+					</p>
+				</div>
+
+				<div class="crustSelection">
+					<div class="centerCrustSelection">
+						<form class="toppings">
+							<input type="checkbox" id="pepperoni">
+							<label for="pepperoni">Pepperoni</label><br>
+							<input type="checkbox" id="sausage">
+							<label for="sausage">Sausage</label><br>
+							<input type="checkbox" id="chicken">
+							<label for="chicken">Chicken</label><br>
+							<input type="checkbox" id="bacon">
+							<label for="bacon">Bacon</label><br>
+							<input type="checkbox" id="onion">
+							<label for="onion">Onion</label><br>
+							<input type="checkbox" id="mushroom">
+							<label for="mushroom">Mushroom</label><br>
+							<input type="checkbox" id="peppers">
+							<label for="peppers">Peppers</label><br>
+							<input type="checkbox" id="pineapple">
+							<label for="pineapple">Pineapple</label><br>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="customerInfo">	
+			<div class="infoCenter">
+				<div class="info">
+					<h2 class="infoHeader">Enter your delivery and contact information</h2>
+					<form class="information">
+						<input type="text" id="firstName" placeholder="First Name">
+						<input type="text" id="lastName" placeholder="Last Name">
+						<input type="text" id="email" placeholder="Email Address">
+						<input type="text" id="phone" placeholder="(XXX) XXX-XXXX">
+						<input type="text" id="additionalInfo" placeholder="Delivery Instructions">
+					</form>
+				</div>
+			</div>
+
+			<div class="infoCenter">
+				<div class="info">
+					<select class="states">
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+					<form class="address">
+						<input type="text" placeholder="Address line 1">
+						<input type="text" placeholder="Address line 2">
+						<input type="text" placeholder="City">
+						<input type="text" placeholder="Zip Code">
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
+
 
 
