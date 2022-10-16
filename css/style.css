@@ -1,0 +1,207 @@
+html,body {
+    width: 100%;
+    height: 110%;
+    overflow-x: hidden;
+    margin: 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(252,0,3,1) 0%, rgba(255,0,0,1) 0%, rgba(42,236,255,1) 100%);  
+}
+
+.contactInfo {
+    align-content: center;
+    position: absolute;
+    margin-right: 20px;
+    bottom: 20px;
+}
+
+.navBar {
+    background-color: black;
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    margin-left: auto;
+}
+
+.navBar li {
+    display: inline-block;
+    font-size: 40px;
+    padding: .25em .5em;
+    width: fit-content;
+}
+
+.navBar li a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.navBar li a:hover {
+    color: black;
+    background-color: white;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.triangle-right {
+	position: absolute;
+    left: 600px;
+    bottom: 200px;
+    width: 0;
+	height: 0;
+	border-top: 200px solid transparent;
+	border-left: 250px solid rgb(201, 255, 74);
+	border-bottom: 200px solid transparent;
+}
+
+.pepperoni {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    position: inherit;
+    right: 150px;
+    top: 50px;
+}
+
+.pepperoni2 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    position: inherit;
+    right: 80px;
+    top: 0px;
+}
+
+.pepperoni3 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    position: inherit;
+    right: 170px;
+    bottom: 50px;
+}
+
+.pizzaimg {
+    clip-path: polygon(32% 51%, 7% 30%, 22% 14%, 54% 5%, 81% 16%, 98% 50%, 83% 85%, 52% 96%, 18% 85%, 5% 64%);
+    position: absolute;
+    right: 350px;
+    top: 110px;
+}
+
+.Welcome {
+    width: 500px;
+    margin: 10px;
+    font-size: 26px;
+}
+
+.story {
+    width: 100vh;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.map {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+.restaraunt {
+    position: absolute;
+    top: 550px;
+    right: 100px;
+}
+
+.contactP {
+    font-size: 2em;
+    width: 700px;
+    text-align: justify;
+}
+
+.Size {
+    position: relative;
+    margin: 20px;
+}
+
+.information {
+    display: grid;
+    width: 50vh;
+    position: relative;
+    text-align: center;
+    height: 10vh;
+}
+
+form {
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+    height: 500px;
+    margin: 1.5em;
+    padding: 1em;
+}
+
+.toppings {
+    position: relative;
+    bottom: 15px
+}
+
+.sauce {
+    position: relative
+    bottom 0px;
+    margin: 20px;
+}
+
+.address {
+    display: grid;
+    position: absolute;
+    height: 6em;
+    bottom: 0;
+    left: 30.8em;
+}
+
+.crust {
+    position: absolute;
+    top: 20em;
+    bottom: 48em;
+    left: 3em;
+}
+
+select {
+    position: absolute;
+    bottom: 10em;
+    left: 40em;
+    width: 149px;
+}
+
+.orderh1 {
+    position: absolute;
+    top: 2.3em;
+}
+
+.titles1 {
+    position: absolute;
+    top: 8.3em;
+    left: 2.7em;
+}
+
+.titles2 {
+    position: absolute;
+    top: 8.3em;
+    left: 16em;
+}
+
+.titles3 {
+    position: absolute;
+    top: 8.3em;
+    left: 27em;
+}
